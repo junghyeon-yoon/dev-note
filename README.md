@@ -1,4 +1,4 @@
-# leetcode
+# My Dev Note
 
-https://leetcode.com/
+- LeetCode: https://leetcode.com/
 
