@@ -23,6 +23,6 @@
 hs_err_pid*
 
 # Custom
-.idea
+algo/leetcode/.idea
 .gradle
 build

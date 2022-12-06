@@ -16,7 +16,7 @@ public class P13 {
         D(500),
         M(1000);
 
-        private int value;
+        private final int value;
 
         RomanNumerals(int i) {
             value = i;

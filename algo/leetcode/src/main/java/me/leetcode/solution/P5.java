@@ -18,7 +18,7 @@ public class P5 {
 
             s = temp.toString();
         } else {
-            var temp = new StringBuilder("");
+            var temp = new StringBuilder();
 
             for(var ch:s.toCharArray()) {
                 temp.append(ch).append("#");
@@ -36,7 +36,7 @@ public class P5 {
             }
         }
 
-        var temp = new StringBuilder("");
+        var temp = new StringBuilder();
         for(var ch:s.substring(biggestPos-length[biggestPos], biggestPos+length[biggestPos]+1).toCharArray()) {
             if('#' == ch) {
                 continue;

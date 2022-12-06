@@ -1,7 +1,5 @@
 package me.leetcode.solution;
 
-import java.util.Stack;
-
 public class P4 {
 
     // https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/

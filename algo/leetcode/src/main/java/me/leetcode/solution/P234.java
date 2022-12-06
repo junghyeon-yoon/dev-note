@@ -1,7 +1,5 @@
 package me.leetcode.solution;
 
-import java.util.List;
-
 public class P234 {
 
     // https://leetcode.com/problems/palindrome-linked-list/

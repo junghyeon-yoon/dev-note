@@ -13,7 +13,7 @@ public class P6 {
         }
         var stringBuilderArray = new StringBuilder[numRows];
         for(int i=0;i<numRows;i++) {
-            stringBuilderArray[i] = new StringBuilder("");
+            stringBuilderArray[i] = new StringBuilder();
         }
         int iter = 0;
         boolean direction = false; //false: up, true: down

@@ -1,7 +1,5 @@
 package me.leetcode.solution;
 
-import java.util.*;
-
 public class P1342 {
 
     // https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
@@ -14,7 +12,7 @@ public class P1342 {
         var step = 0;
 
         while(num>0) {
-            var isEven = num%2==0?true:false;
+            var isEven = num % 2 == 0;
 
             if(isEven) {
                 num = num / 2;

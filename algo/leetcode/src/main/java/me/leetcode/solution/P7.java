@@ -10,7 +10,7 @@ public class P7 {
     public int reverse(int x) {
 
 
-        var builder = new StringBuilder("");
+        var builder = new StringBuilder();
 
         for(char ch:String.valueOf(x).toCharArray()) {
             if('-'!=ch) {
