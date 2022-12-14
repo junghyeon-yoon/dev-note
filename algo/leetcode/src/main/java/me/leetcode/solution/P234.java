@@ -1,5 +1,7 @@
 package me.leetcode.solution;
 
+import me.leetcode.solution.util.ListNode;
+
 public class P234 {
 
     // https://leetcode.com/problems/palindrome-linked-list/
@@ -35,11 +37,4 @@ public class P234 {
         return temp1.compareTo(temp2.reverse())==0;
     }
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
 }
