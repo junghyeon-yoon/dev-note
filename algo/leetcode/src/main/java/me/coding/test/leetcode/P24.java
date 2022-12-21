@@ -24,7 +24,7 @@ public class P24 {
             return head;
         }
 
-        Stack<ListNode> stack = new Stack();
+        Stack<ListNode> stack = new Stack<>();
 
         while(head!=null) {
             stack.push(head);
