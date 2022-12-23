@@ -7,7 +7,7 @@ public class P226 {
     public static void main(String[] args) {
         var problem = new P226();
         TreeNode head = new TreeNode(2, new TreeNode(1), new TreeNode(3));
-        System.out.println(problem.invertTree(head);
+        System.out.println(problem.invertTree(head));
     }
 
     public TreeNode invertTree(TreeNode root) {
