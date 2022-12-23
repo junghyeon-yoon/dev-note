@@ -10,33 +10,47 @@ public class P33 {
     }
 
     public int search(int[] nums, int target) {
-        if(nums==null || nums.length==0) return -1;
         
-        int front = 0;
-        int back = nums.length-1;
+        int left = 0;
+        int right = nums.length-1;
+        int resultIndex = -1;
 
-        while(front<=back){
-        	int center = (front+back)/2;
+        while(left <= right) {
+            int mid = (left+right)/2;
 
-        	if(nums[center]==target) {
-                return center;
-            } else if(
-                nums[center]>=nums[0] && target>=nums[0] || 
-                nums[center]<nums[0] && target<nums[0]
-            ) {
-        		if(target<nums[center]) {
-                    back=center-1;
+            if(nums[left]==target) {
+                resultIndex = left;
+                break;
+            } else if(nums[mid]==target) {
+                resultIndex = mid;
+                break;
+            } else if(nums[right]==target) {
+                resultIndex = right;
+                break;
+            }
+
+            // check pivot index and find sorted side
+            if(nums[left] < nums[mid]) {
+                // sorted side: left
+                if(target > nums[left] && target < nums[mid]) {
+                    left++;
+                    right = mid-1;
                 } else {
-                    front=center+1;
+                    right--;
+                    left = mid+1;
                 }
-        	} else {
-        		if(target<nums[center]) {
-                    front=center+1;
+            } else {
+                //sorted side: right
+                if(target > nums[mid] && target < nums[right]) {
+                    right--;
+                    left = mid+1;
                 } else {
-                    back=center-1;
+                    left++;
+                    right = mid-1;
                 }
-        	}
+            }
         }
-        return -1;
+
+        return resultIndex; 
     }
 }
