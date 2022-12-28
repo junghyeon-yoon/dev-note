@@ -1,10 +1,10 @@
-package me.coding.test.programmers;
+package me.coding.test.programmers.courses30;
 
-public class Lesson12973 {
+public class L12973 {
 
     // https://school.programmers.co.kr/learn/courses/30/lessons/12973
     public static void main(String[] args) {
-        var problem = new Lesson12973();
+        var problem = new L12973();
 //        System.out.println(problem.solution("baabaa"));
         System.out.println(problem.solution("bbssaa"));
     }
