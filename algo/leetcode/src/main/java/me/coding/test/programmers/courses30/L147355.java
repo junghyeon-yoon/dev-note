@@ -1,8 +1,5 @@
 package me.coding.test.programmers.courses30;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-
 public class L147355 {
 
     // https://school.programmers.co.kr/learn/courses/30/lessons/147355
