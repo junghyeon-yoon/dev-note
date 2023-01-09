@@ -28,7 +28,6 @@ public class L150370 {
         Map<String, Integer> termMap = new HashMap<>();
 
         for(String term:terms) {
-            System.out.println(term);
             String[] splitedTerm = term.split(" ");
             termMap.put(splitedTerm[0], Integer.valueOf(splitedTerm[1]));
         }
